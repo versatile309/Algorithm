@@ -33,6 +33,14 @@ class Test {
 
     @Test
     fun test(){
-        assert(solution(arrayOf(1,3,2,4,2).toIntArray()).contentEquals(arrayOf(1,2,3).toIntArray()))
+        assert(
+            solution(arrayOf(1,3,2,4,2).toIntArray())
+                .contentEquals(arrayOf(1,2,3).toIntArray())
+        )
+
+        assert(
+            solution(arrayOf(1,2,3,4,5).toIntArray())
+                .contentEquals(arrayOf(1).toIntArray())
+        )
     }
 }
