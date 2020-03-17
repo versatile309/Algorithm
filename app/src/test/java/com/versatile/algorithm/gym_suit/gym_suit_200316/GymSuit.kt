@@ -1,4 +1,4 @@
-package com.versatile.algorithm.gym_suit
+package com.versatile.algorithm.gym_suit.gym_suit_200316
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
@@ -51,23 +51,43 @@ class SolutionTest {
     @Test
     fun `get max students who get gym suit`() {
         assertThat(
-            solution(5, intArrayOf(2, 4), intArrayOf(1, 3, 5))
+            solution(
+                5,
+                intArrayOf(2, 4),
+                intArrayOf(1, 3, 5)
+            )
         ).isEqualTo(5)
 
         assertThat(
-            solution(5, intArrayOf(2, 4), intArrayOf(3))
+            solution(
+                5,
+                intArrayOf(2, 4),
+                intArrayOf(3)
+            )
         ).isEqualTo(4)
 
         assertThat(
-            solution(3, intArrayOf(3), intArrayOf(1))
+            solution(
+                3,
+                intArrayOf(3),
+                intArrayOf(1)
+            )
         ).isEqualTo(2)
 
         assertThat(
-            solution(8, intArrayOf(2,3,4), intArrayOf(1))
+            solution(
+                8,
+                intArrayOf(2, 3, 4),
+                intArrayOf(1)
+            )
         ).isEqualTo(6)
 
         assertThat(
-            solution(8, intArrayOf(2,3,4), intArrayOf(5))
+            solution(
+                8,
+                intArrayOf(2, 3, 4),
+                intArrayOf(5)
+            )
         ).isEqualTo(6)
     }
 }
