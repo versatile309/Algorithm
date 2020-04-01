@@ -1,4 +1,4 @@
-package com.versatile.algorithm.integer_sum
+package com.versatile.algorithm.integer_sum.integer_sum
 
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Test
